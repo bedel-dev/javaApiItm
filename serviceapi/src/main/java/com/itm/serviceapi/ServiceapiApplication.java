@@ -13,6 +13,6 @@ public class ServiceapiApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        System.out.println("Hello i am working here");
+//        System.out.println("Hello i am working here");
     }
 }

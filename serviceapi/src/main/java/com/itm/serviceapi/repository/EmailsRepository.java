@@ -1,5 +1,11 @@
 package com.itm.serviceapi.repository;
 
-public interface EmailsRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.itm.serviceapi.model.Emails;
+
+@Repository
+public interface EmailsRepository extends JpaRepository<Emails, Long> {
 
 }

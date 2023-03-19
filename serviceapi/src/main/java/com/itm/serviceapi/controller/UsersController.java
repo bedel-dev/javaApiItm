@@ -58,7 +58,7 @@ public class UsersController {
             	map.clear();
                 map.put("request date", new Date());
                 map.put("code_status", 400);
-                map.put("user", "is not connected");
+                map.put("user", "is not created");
         	}
 
             return new ResponseEntity<Object>(map,HttpStatus.OK);
