@@ -34,4 +34,14 @@ public class UsersService {
     	Users savedData = usersRepository.save(data);
         return savedData;
     }
+    
+    public  Boolean liginuser(Users data) {
+    	Boolean rep;
+    	if(usersRepository.existsByUsername(data.getUsername())&& usersRepository.existsByPass(data.getPass())){
+    		rep = true;
+    	}else {
+    		rep = false;
+    	}
+    	return rep;
+    }
 }

@@ -7,5 +7,7 @@ import com.itm.serviceapi.model.Users;
 
 @Repository
 public interface UsersRepository extends JpaRepository<Users, Long> {
+	  Boolean existsByUsername(String username);
 
+	  Boolean existsByPass(String pass);
 }
